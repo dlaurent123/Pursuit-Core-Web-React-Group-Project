@@ -34,9 +34,13 @@ nav {
 }
 
 .search {
-    width: 40%;
+    width: 100%;
     font-size: 16px;
     letter-spacing: 2px;
+}
+
+.searchForm {
+    width: 40%;
 }
 
 .navAnchor {

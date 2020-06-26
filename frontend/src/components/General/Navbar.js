@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
+import { useInput } from '../../util/customHooks';
 import OurCanvasLogoSplat from "../../images/OurCanvasLogoSplat.png";
 import "../../css/Navbar.css";
 
-const Navbar = ({ setLoggedIn }) => {
+const Navbar = ({ setLoggedIn, onSearch }) => {
+  let search = useInput("");
   return (
     <nav>
       <div className="navLeft">
@@ -16,7 +18,12 @@ const Navbar = ({ setLoggedIn }) => {
         <NavLink to="/profile" className="navAnchor">
           Profile
         </NavLink>
-        <input type="search" placeholder="Search By Tag" className="search" />
+        <form onSubmit={(e) => {
+          e.preventDefault();
+          onSearch(search.value);
+        }} className="searchForm">
+          <input type="search" placeholder="Search By Tag" className="search" {...search} />
+        </form>
         <NavLink
           to="/login"
           onClick={() => setLoggedIn(false)}
