@@ -1,0 +1,22 @@
+.makePostForm {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-top: 30px;
+    border: 2px solid rgb(253, 80, 221);
+    box-shadow: 5px 5px 0px 0px rgba(5, 216, 244, 0.281);
+    background-color: white;
+    border-radius: 25px;
+    height: fit-content;
+    justify-content: space-evenly;
+}
+
+.makePostCaption {
+    margin-top: 25px;
+}
+
+.makePostFile {
+    display: flex;
+    flex-direction: column;
+}

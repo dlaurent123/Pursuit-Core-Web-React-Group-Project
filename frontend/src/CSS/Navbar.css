@@ -1,88 +1,94 @@
 nav {
-    background-color: rgb(255, 255, 255);
-    opacity: 1.0;
-    width: 101%;
-    position: sticky;
-    top: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-size: 24px;
-    border: 2px rgb(253, 80, 221);
-    border-style: inset;
-    align-items: center;
-    z-index: 5;
-    margin-bottom: 20px;
-    box-shadow: 7px 7px 0px 0px rgba(5, 216, 244, 0.281);
-    margin-left: -9px;
+  background-color: rgb(255, 255, 255);
+  opacity: 1;
+  width: 101%;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 24px;
+  border: 2px rgb(253, 80, 221);
+  border-style: inset;
+  align-items: center;
+  z-index: 5;
+  margin-bottom: 20px;
+  box-shadow: 7px 7px 0px 0px rgba(5, 216, 244, 0.281);
+  margin-left: -9px;
 }
 
 .navLogo {
-    height: 150px;
-    width: 150px;
-    margin-left: 90px;
-    margin-top: -12px;
+  height: 150px;
+  width: 150px;
+  margin-left: 90px;
+  margin-top: -12px;
 }
 
 .navRight {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-right: 60px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-right: 60px;
 }
 
 .search {
-    width: 100%;
-    font-size: 16px;
-    letter-spacing: 2px;
+  width: 100%;
+  font-size: 16px;
+  letter-spacing: 2px;
 }
 
 .searchForm {
-    width: 40%;
+  width: 40%;
 }
 
 .navAnchor {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    padding: 8px;
-    border-radius: 80px;
-    box-shadow: 5px 5px 0px 0px rgba(5, 216, 244, 0.281);
-    background: white;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 16px;
-    padding: 15px;
-    width: 100px;
-    justify-content: center;
-    text-align: center;
-    border: 2px solid rgb(253, 80, 221);
-    font-size: 24px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 8px;
+  border-radius: 80px;
+  box-shadow: 5px 5px 0px 0px rgba(5, 216, 244, 0.281);
+  background: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  padding: 15px;
+  width: 100px;
+  justify-content: center;
+  text-align: center;
+  border: 2px solid rgb(253, 80, 221);
+  font-size: 24px;
 }
 
 .navAnchor:hover {
-    border: 2px solid rgba(5, 216, 244, 0.281);
-    box-shadow: 5px 5px 0px 0px rgba(253, 80, 221, 0.575);
+  border: 2px solid rgba(5, 216, 244, 0.281);
+  box-shadow: 5px 5px 0px 0px rgba(253, 80, 221, 0.575);
 }
 
 .navAnchor:active {
-    position:relative;
-    top: 5px;
-    left: 5px;
-    box-shadow: 0px 0px 0px 0px;
+  position: relative;
+  top: 5px;
+  left: 5px;
+  box-shadow: 0px 0px 0px 0px;
 }
 
 .active {
-    background-image: repeating-linear-gradient(233deg, rgba(161, 131, 106, 0.507), rgba(161, 131, 106, 0.507) 1px, transparent -19px, transparent 2px);
-    box-shadow: inset 3px 3px 0px 0px rgba(5, 176, 244, 0.575);
-    position:relative;
-    top: 5px;
-    left: 5px;
+  background-image: repeating-linear-gradient(
+    233deg,
+    rgba(161, 131, 106, 0.507),
+    rgba(161, 131, 106, 0.507) 1px,
+    transparent -19px,
+    transparent 2px
+  );
+  box-shadow: inset 3px 3px 0px 0px rgba(5, 176, 244, 0.575);
+  position: relative;
+  top: 5px;
+  left: 5px;
 }
 
 .active:hover {
-    box-shadow: inset 3px 3px 0px 0px rgba(253, 80, 221, 0.575);
-    border: 2px solid rgba(5, 176, 244, 0.575)
+  box-shadow: inset 3px 3px 0px 0px rgba(253, 80, 221, 0.575);
+  border: 2px solid rgba(5, 176, 244, 0.575);
 }

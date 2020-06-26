@@ -7,7 +7,7 @@ import Home from "./components/Home/Home";
 import Profile from "./components/Profile/Profile";
 import Navbar from "./components/General/Navbar";
 import "./App.css";
-import UpLoadImage from "./components/PhotoUpLoad/photoUpLoad";
+import UpLoadImage from "./components/PhotoUpload/photoUpLoad";
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(false);
@@ -18,7 +18,7 @@ function App() {
 
   const onSearch = search => {
     setSearchValue(search);
-  }
+  };
 
   const handleSignUp = async user => {
     try {
@@ -59,7 +59,13 @@ function App() {
             <Profile user={user} error={error} errorText={errorText} />
           </Route>
           <Route exact path="/">
-            <Home user={user} error={error} errorText={errorText} searchValue={searchValue}/>
+            <Home
+              user={user}
+              error={error}
+              errorText={errorText}
+              searchValue={searchValue}
+              setSearchValue={setSearchValue}
+            />
           </Route>
         </Switch>
       </div>

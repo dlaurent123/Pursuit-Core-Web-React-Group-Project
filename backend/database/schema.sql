@@ -50,12 +50,13 @@ VALUES
 INSERT INTO posts
   (poster_id, caption,picture,created_at)
 VALUES(3, 'YERRR', '/uploads/IMAGE-1583972165084.ico' , '2020-03-07T03:36:00'),
-  (2, 'YERR YERRR', '/uploads/IMAGE-1583972165084.ico' , '2020-03-07T03:36:00');
+  (2, 'YERR YERRR', '/uploads/IMAGE-1583972165084.ico' , '2020-03-07T03:36:00'),
+  (1, 'HELLO', '/uploads/IMAGE-1583972165084.ico', '2020-03-07T03:37:00');
 
 INSERT INTO tags
   (post_id,tag)
-VALUES(1, '#TAG1'),
-  (2, '#TAG2'),
-  (2, '#TAG3'),
-  (1, '#TAG4'),
-  (1, '#TAG5');  
+VALUES(1, 'TAG1'),
+  (2, 'TAG2'),
+  (2, 'TAG3'),
+  (1, 'TAG4'),
+  (1, 'TAG5');  

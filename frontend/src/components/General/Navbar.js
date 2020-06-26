@@ -18,11 +18,19 @@ const Navbar = ({ setLoggedIn, onSearch }) => {
         <NavLink to="/profile" className="navAnchor">
           Profile
         </NavLink>
-        <form onSubmit={(e) => {
-          e.preventDefault();
-          onSearch(search.value);
-        }} className="searchForm">
-          <input type="search" placeholder="Search By Tag" className="search" {...search} />
+        <form
+          onSubmit={e => {
+            e.preventDefault();
+            onSearch(search.value);
+          }}
+          className="searchForm"
+        >
+          <input
+            type="search"
+            placeholder="Search By Tag"
+            className="search"
+            {...search}
+          />
         </form>
         <NavLink
           to="/login"
